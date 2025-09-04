@@ -1,11 +1,5 @@
-window.onload = function() {
-    // ボタンを取得
-    const btn = document.getElementById("btn");
-    const title = document.getElementById("title");
-  
-    // ボタンをクリックしたときの動き
-    btn.addEventListener("click", function() {
-      title.textContent = "ボタンが押されました！";
-      title.style.color = "red"; // 文字色を赤に変更
-    });
-  };
+document.getElementById('calc').onclick = function () {
+  const x = Number(document.getElementById('').value);
+  const y = Number(document.getElementById('').value);
+  document.getElementById('result').textContent = '結果: ';
+};
