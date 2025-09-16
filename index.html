@@ -7,33 +7,17 @@
   </head>
   <body>
     <h1>四則演算アプリ</h1>
-    <h2>足し算</h2>
-    <input id="add-a" type="number" placeholder="数値A" />
-    +
-    <input id="add-b" type="number" placeholder="数値B" />
-    <button id="add-calc">計算</button>
-    <div id="add-result">結果:</div>
-
-    <h2>引き算</h2>
-    <input id="sub-a" type="number" placeholder="数値A" />
-    -
-    <input id="sub-b" type="number" placeholder="数値B" />
-    <button id="sub-calc">計算</button>
-    <div id="sub-result">結果:</div>
-
-    <h2>掛け算</h2>
-    <input id="mul-a" type="number" placeholder="数値A" />
-    ×
-    <input id="mul-b" type="number" placeholder="数値B" />
-    <button id="mul-calc">計算</button>
-    <div id="mul-result">結果:</div>
-
-    <h2>割り算</h2>
-    <input id="div-a" type="number" placeholder="数値A" />
-    ÷
-    <input id="div-b" type="number" placeholder="数値B" />
-    <button id="div-calc">計算</button>
-    <div id="div-result">結果:</div>
+<div class="calc-row">
+  <input id="a" type="number" placeholder="数値A" />
+  <select id="op">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">×</option>
+    <option value="/">÷</option>
+  </select>
+  <input id="b" type="number" placeholder="数値B" />
+</div>
+<button id="calc">計算</button> <div id="result">結果:</div>
 
     <script src="function.js"></script>
   </body>

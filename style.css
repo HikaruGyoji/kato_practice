@@ -30,9 +30,17 @@ button {
   cursor: pointer;
 }
 
-#add-result, #sub-result, #mul-result, #div-result {
-  margin-top: 10px;
+#result {
+	display: inline-block;     /* 同じ行に並べる */
+  margin: 0 0 0 12px;        /* 左余白を付ける */
   font-weight: bold;
   font-size: 20px;
   color: blue;
+  vertical-align: middle;    /* ボタンとの縦位置を揃える */
+}
+
+select {
+  margin: 5px;
+  padding: 5px;
+  font-size: 16px;
 }
